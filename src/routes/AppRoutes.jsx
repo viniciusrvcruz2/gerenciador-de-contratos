@@ -21,17 +21,17 @@ export const AppRoutes = () => {
         {user && <Header />}
         <Routes>
             <Route path='/gerenciador-de-contratos/' element={<Login />} />
-            <Route path='/home' element={<PrivateRoutes />}>
-                <Route path='/home' element={<Home />} />   
+            <Route path='/gerenciador-de-contratos/home' element={<PrivateRoutes />}>
+                <Route path='/gerenciador-de-contratos/home' element={<Home />} />   
             </Route>
-            <Route path='/mycontracts' element={<PrivateRoutes />}>
-                <Route path='/mycontracts' element={<MyContracts />} />   
+            <Route path='/gerenciador-de-contratos/mycontracts' element={<PrivateRoutes />}>
+                <Route path='/gerenciador-de-contratos/mycontracts' element={<MyContracts />} />   
             </Route>
-            <Route path='/mycontracts/:idContract' element={<PrivateRoutes />}>
-                <Route path='/mycontracts/:idContract' element={<ContractSelected />} />   
+            <Route path='/gerenciador-de-contratos/mycontracts/:idContract' element={<PrivateRoutes />}>
+                <Route path='/gerenciador-de-contratos/mycontracts/:idContract' element={<ContractSelected />} />   
             </Route>
-            <Route path='/contract/:idArtist' element={<PrivateRoutes />}>
-                <Route path='/contract/:idArtist' element={<Contract />} />   
+            <Route path='/gerenciador-de-contratos/contract/:idArtist' element={<PrivateRoutes />}>
+                <Route path='/gerenciador-de-contratos/contract/:idArtist' element={<Contract />} />   
             </Route>
             <Route path='*' element={<PageNotFound />} />
         </Routes>
