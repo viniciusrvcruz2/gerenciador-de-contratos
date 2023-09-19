@@ -17,7 +17,7 @@ export const AppRoutes = () => {
   const { user } = useContext(AuthContext)
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/gerenciador-de-contratos">
         {user && <Header />}
         <Routes>
             <Route path='/gerenciador-de-contratos/' element={<Login />} />
