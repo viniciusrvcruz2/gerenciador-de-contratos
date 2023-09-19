@@ -17,7 +17,7 @@ export const PrivateRoutes = () => {
 
 
   return authChecked ? (
-    signed ? <Outlet /> : <Navigate to='/' />
+    signed ? <Outlet /> : <Navigate to='/gerenciador-de-contratos/' />
   ) : (
     
     <Loading />

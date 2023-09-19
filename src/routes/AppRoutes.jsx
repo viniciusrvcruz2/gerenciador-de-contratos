@@ -20,7 +20,7 @@ export const AppRoutes = () => {
     <BrowserRouter>
         {user && <Header />}
         <Routes>
-            <Route path='/' element={<Login />} />
+            <Route path='/gerenciador-de-contratos/' element={<Login />} />
             <Route path='/home' element={<PrivateRoutes />}>
                 <Route path='/home' element={<Home />} />   
             </Route>
